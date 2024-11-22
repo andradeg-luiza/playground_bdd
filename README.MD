@@ -22,7 +22,7 @@ I am currently taking a course to specialize in Cypress. The course covers compr
 
 ## Folder Diagram
 
-![Imagem](docs/diagrama_pastas.png)
+![Imagem](./docs/diagrama_pastas.png)
 
 
 ### Tools and Patterns
