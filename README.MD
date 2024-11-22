@@ -14,6 +14,7 @@ I am currently taking a course to specialize in Cypress. The course covers compr
 | / - / - / - /`step`             | Defines the Cucumber steps for the tests.           |
 | / - / - / `fixtures`            | Contains static data used in the tests.             |
 | / - / - / `support`             | Support scripts, such as custom commands.           |
+| / - / `docs`                    | Folder with auxiliary files for the project.        |
 | / - / `.gitignore`              | Lists files and folders to be ignored by Git.       |
 | / - / `cypress.config.js`       | Cypress configuration file                          |
 | / - / `package-lock.json`       | File that locks npm dependencies versions.          |
