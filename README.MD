@@ -21,6 +21,11 @@ I am currently taking a course to specialize in Cypress. The course covers compr
 | / - / `README.MD`               | Project description, instructions, and information. |
 
 
+## Folder Structure Diagram
+
+![Imagem](docs/diagrama_pastas.png)
+
+
 ### Tools and Patterns
 
 -   <img src ="https://img.icons8.com/color/35/000000/javascript.png" width="30"/>
