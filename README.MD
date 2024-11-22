@@ -25,6 +25,10 @@ I am currently taking a course to specialize in Cypress. The course covers compr
 
 ![Imagem](./docs/diagrama_pastas.png)
 
+## Flowchart
+
+![Imagem](./docs/flowchart.png)
+
 
 ### Tools and Patterns
 
