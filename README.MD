@@ -20,6 +20,10 @@ I am currently taking a course to specialize in Cypress. The course covers compr
 | / - / `package.json`            | Contains project dependencies and scripts.          |
 | / - / `README.MD`               | Project description, instructions, and information. |
 
+## Folder Diagram
+
+![Imagem](docs/diagrama_pastas.png)
+
 
 ### Tools and Patterns
 
