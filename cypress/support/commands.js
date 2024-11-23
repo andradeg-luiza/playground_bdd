@@ -30,3 +30,9 @@ Cypress.Commands.add('accessHome', () => {
     cy.contains('h2', 'Faça login')
         .should('be.visible')
 })
+
+Cypress.Commands.add('login', () => {
+    cy.get('[data-cy="email"]').type('papito@cyskills.com.br')
+    cy.get('[data-cy="password"]').type('showtime')
+    cy.get('[data-cy="login-button"]').click()
+  })
