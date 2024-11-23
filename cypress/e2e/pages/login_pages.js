@@ -6,7 +6,7 @@ const login = new loginFuncionality();
 class LoginPage {
 
   visitLoginPage() {
-    cy.visit('/');
+    cy.accessHome();
   }
 
   enterEmail(email) {
