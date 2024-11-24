@@ -17,11 +17,19 @@ class InputPage {
   }
 
   fillOutForm() {
-    cy.get('[data-cy="fullname"]').type('Luiza Gusmão');
-    cy.get('[data-cy="email"]').type('luiza@papito.dev');
-    cy.get('[data-cy="number"]').type('8199999999');
-    cy.get('[data-cy="date"]').type('2024-12-01');
-  }  
+    cy.get(input.fullNameInput()).type('Luiza Gusmão');
+    cy.get(input.emailInput()).type('luiza@papito.dev');
+    cy.get(input.numberInput()).type('8199999999');
+    cy.get(input.dateInput()).type('2024-12-01');
+  }
+  
+  validateFormFields() {
+    cy.get(input.fullNameInput()).should('have.value', 'Luiza Gusmão');
+    cy.get(input.emailInput()).should('have.value', 'luiza@papito.dev');
+    cy.get(input.numberInput()).should('have.value', '8199999999');
+    cy.get(input.dateInput()).should('have.value', '2024-12-01');
+  }
+  
 
 }
 

@@ -13,4 +13,5 @@ Then(/^I access the Input Menu$/, () => {
 
 Then(/^I fill the form$/, () => {
   inputPage.fillOutForm();
+  inputPage.validateFormFields();
 });
