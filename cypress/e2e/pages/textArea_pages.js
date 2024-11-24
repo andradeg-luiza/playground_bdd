@@ -12,7 +12,7 @@ class TextAreaPage {
 
     visitTexteAreaMenu() {
         cy.userLoggedIn();
-        cy.get(textArea.navigateInput()).click();
+        cy.get(textArea.navigateTextarea()).click();
         cy.contains('h2', 'Textarea').should('be.visible')
     }
 

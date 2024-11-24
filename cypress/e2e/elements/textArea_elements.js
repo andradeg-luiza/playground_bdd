@@ -1,5 +1,5 @@
 class TextAreaElements {
-    navigateInput = () => { return 'nav a[href="/textarea"' }
+    navigateTextarea = () => { return 'nav a[href="/textarea"' }
     textAreaInput = () => { return 'textarea[name="message"]' }
 }
 
