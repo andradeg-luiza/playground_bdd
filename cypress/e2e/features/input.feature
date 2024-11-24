@@ -5,5 +5,6 @@ Feature: Input Fields Functionality
 
   Scenario: Filling in the input fields on the form
     Given I am logged in as a valid user
-    And I access the Input Menu
-    Then I fill the form
+    When I access the Input Menu
+    And I fill the form
+    Then I validate if the fields were filled in
