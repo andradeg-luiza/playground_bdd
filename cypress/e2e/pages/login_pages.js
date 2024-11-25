@@ -1,7 +1,7 @@
 /// <reference types="cypress" /> 
 
-import loginFuncionality from "../elements/login_elements";
-const login = new loginFuncionality();
+import LoginFuncionality from "../elements/login_elements";
+const loginFuncionality = new LoginFuncionality();
 
 class LoginPage {
 
@@ -10,35 +10,35 @@ class LoginPage {
   }
 
   enterEmail(email) {
-    cy.get(login.loginField()).type(email);
+    cy.get(loginFuncionality.loginField()).type(email);
   }
 
   enterPassword(password) {
-    cy.get(login.emailField()).type(password);
+    cy.get(loginFuncionality.emailField()).type(password);
   }
 
   clickLoginButton() {
-    cy.get(login.loginButton()).click();
+    cy.get(loginFuncionality.loginButton()).click();
   }
 
   verifyMessage(message) {
     if (message === 'Boas vindas ao Cypress Playground') {
-      cy.get(login.wellcomeTitle())
+      cy.get(loginFuncionality.wellcomeTitle())
         .should('be.visible')
         .and('have.text', message);
     } else {
-      cy.get(login.msgError())
+      cy.get(loginFuncionality.msgError())
         .should('be.visible')
         .and('have.text', message);
     }
   }
 
   verifyWelcomeTitle() {
-    cy.get(login.wellcomeTitle()).should('be.visible');
+    cy.get(loginFuncionality.wellcomeTitle()).should('be.visible');
   }
 
   verifyLoginTitle() {
-    cy.get(login.loginTitle()).should('be.visible');
+    cy.get(loginFuncionality.loginTitle()).should('be.visible');
   }
 }
 
