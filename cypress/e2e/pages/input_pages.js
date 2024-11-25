@@ -1,7 +1,7 @@
 /// <reference types="cypress" /> 
 
-import inputFuncionality from "../elements/input_elements";
-const input = new inputFuncionality();
+import InputElements from "../elements/input_elements";
+const inputElements = new InputElements();
 
 class InputPage {
 
@@ -12,24 +12,23 @@ class InputPage {
 
   visitInputMenu() {
     cy.userLoggedIn();
-    cy.get(input.navigateInput()).click();
+    cy.get(inputElements.navigateInput()).click();
     cy.contains('h2', 'Input Fields').should('be.visible')
   }
 
   fillOutForm() {
-    cy.get(input.fullNameInput()).type('Luiza Gusmão');
-    cy.get(input.emailInput()).type('luiza@papito.dev');
-    cy.get(input.numberInput()).type('8199999999');
-    cy.get(input.dateInput()).type('2024-12-01');
+    cy.get(inputElements.fullNameInput()).type('Luiza Gusmão');
+    cy.get(inputElements.emailInput()).type('luiza@papito.dev');
+    cy.get(inputElements.numberInput()).type('8199999999');
+    cy.get(inputElements.dateInput()).type('2024-12-01');
   }
-  
+
   validateFormFields() {
-    cy.get(input.fullNameInput()).should('have.value', 'Luiza Gusmão');
-    cy.get(input.emailInput()).should('have.value', 'luiza@papito.dev');
-    cy.get(input.numberInput()).should('have.value', '8199999999');
-    cy.get(input.dateInput()).should('have.value', '2024-12-01');
+    cy.get(inputElements.fullNameInput()).should('have.value', 'Luiza Gusmão');
+    cy.get(inputElements.emailInput()).should('have.value', 'luiza@papito.dev');
+    cy.get(inputElements.numberInput()).should('have.value', '8199999999');
+    cy.get(inputElements.dateInput()).should('have.value', '2024-12-01');
   }
-  
 
 }
 
