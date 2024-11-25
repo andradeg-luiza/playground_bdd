@@ -1,7 +1,7 @@
 /// <reference types="cypress" /> 
 
 import CheckBoxElements from "../elements/checkBox_elements";
-const checkBox = new CheckBoxElements();
+const checkBoxElements = new CheckBoxElements();
 
 class checkBoxPages {
 
@@ -12,13 +12,13 @@ class checkBoxPages {
 
     visitCheckBoxMenu() {
         cy.userLoggedIn();
-        cy.get(checkBox.navigateCheckBoxArea()).click();
+        cy.get(checkBoxElements.navigateCheckBoxArea()).click();
         cy.contains('h2', 'Checkbox').should('be.visible')
     }
 
     clickNodeJsLanguages() {
-        cy.get(checkBox.labelJavaScript()).click()
-        cy.get(checkBox.labelTypeScript()).click()
+        cy.get(checkBoxElements.labelJavaScript()).click()
+        cy.get(checkBoxElements.labelTypeScript()).click()
     }
 
     clickAllLanguages() {
