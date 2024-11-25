@@ -1,7 +1,7 @@
 /// <reference types="cypress" /> 
 
-import RadioButtoElements from "../elements/radioButton_elements"
-const radioButtoElements = new RadioButtoElements();
+import RadioButtonElements from "../elements/radioButton_elements"
+const radioButtonElements = new RadioButtonElements();
 
 class radioButtonPages {
 
@@ -12,7 +12,7 @@ class radioButtonPages {
 
     visitradioButtonMenu() {
         cy.userLoggedIn();
-        cy.get(radioButtoElements.navigateRadioPage()).click();
+        cy.get(radioButtonElements.navigateRadioPage()).click();
         cy.contains('h2', 'Radio Buttons').should('be.visible')
     }
 

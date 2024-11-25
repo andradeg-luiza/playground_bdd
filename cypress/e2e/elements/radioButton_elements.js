@@ -1,5 +1,5 @@
-class radioButtoElements {
+class radioButtonElements {
     navigateRadioPage = () => { return 'nav a[href="/radio"' }
 }
 
-export default radioButtoElements;
+export default radioButtonElements;
