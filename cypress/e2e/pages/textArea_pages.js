@@ -1,7 +1,7 @@
 /// <reference types="cypress" /> 
 
 import TextAreaElements from "../elements/textArea_elements";
-const textArea = new TextAreaElements();
+const textAreaElements = new TextAreaElements();
 
 class TextAreaPage {
 
@@ -12,16 +12,16 @@ class TextAreaPage {
 
     visitTexteAreaMenu() {
         cy.userLoggedIn();
-        cy.get(textArea.navigateTextarea()).click();
+        cy.get(textAreaElements.navigateTextarea()).click();
         cy.contains('h2', 'Textarea').should('be.visible')
     }
 
     fillTextArea() {
-        cy.get(textArea.textAreaInput()).type('Hello, World!!!!!!!!!!!!')
+        cy.get(textAreaElements.textAreaInput()).type('Hello, World!!!!!!!!!!!!')
     }
 
     validateTextAreaFields() {
-        cy.get(textArea.textAreaInput()).should('have.value', 'Hello, World!!!!!!!!!!!!');
+        cy.get(textAreaElements.textAreaInput()).should('have.value', 'Hello, World!!!!!!!!!!!!');
     }
 }
 
