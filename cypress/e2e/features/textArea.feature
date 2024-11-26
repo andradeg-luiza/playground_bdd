@@ -1,5 +1,3 @@
-//TODO refatorar em breve para adicionar novas features
-
 Feature: Text Area Functionality
   As a user
   I want to fill in the text area
