@@ -1,3 +1,5 @@
+//TODO refatorar em breve para adicionar novas features
+
 Feature: Radio Option Functionality
   As a user
   I want to select a single option in a list

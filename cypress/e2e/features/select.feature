@@ -1,3 +1,5 @@
+//TODO refatorar em breve para adicionar novas features
+
 Feature: Select Functionality
   As a user
   I want to select options from a dropdown or list

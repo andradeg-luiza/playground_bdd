@@ -1,3 +1,5 @@
+//TODO refatorar em breve para adicionar novas features
+
 Feature: Checkbox Functionality
   As a user
   I want to check multiple options in a list
