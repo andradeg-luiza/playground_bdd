@@ -27,7 +27,7 @@ I am currently taking a course to specialize in Cypress. The course covers compr
 
 ## Flowchart
 
-![Imagem](./docs/flowchart.png)
+![Imagem](../docs/flowchart.png)
 
 
 ### Tools and Patterns
